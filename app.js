@@ -18,7 +18,8 @@ app.config(function($routeProvider){
         })
         .when('/contact', {
             templateUrl: '/views/contact.html',
-            controller: 'contact'
+            controller: 'ContactController',
+            controllerAs: 'contact'
         })
         .otherwise({
             redirectTo: '/'
